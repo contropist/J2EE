@@ -1,0 +1,8 @@
+  <body>
+    <form action="servlet/RequestDemoServlet" method="post">
+    ¼¼ÄÜÊ÷£º<input name="Fruit" type="checkbox" value="Java" />Java
+    <input name="Fruit" type="checkbox" value="Oracle" />Oracle
+    <input name="Fruit" type="checkbox" value="git" />git
+    <input name="Fruit" type="checkbox" value="linux" />linux
+    <input type="submit" value="IPµÇÂ½">
+    </form>

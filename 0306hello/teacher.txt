@@ -1,0 +1,27 @@
+//1.获取客户端传递的值
+		
+		String name = request.getParameter("name");
+		String password = request.getParameter("password");
+		System.out.println(name);
+		
+		//2.通过用户名查询密码 select pass from users where username = name;
+		//                 String pass = pass
+		//定义用户名和密码
+		String trueName = "123";
+		String truePassword = "456";
+		
+		//3判断输入用户名和密码是否正确；
+		
+	
+	if(name.equals(trueName) && password.equals(truePassword)){
+					
+	   //response.sendRedirect("./LoginScServlet?name="+name);
+		
+		/*RequestDispatcher rd = request.getRequestDispatcher("LoginScServlet");
+		rd.forward(request, response);*/
+		request.getRequestDispatcher("/servlet/LoginScServlet").forward(request, response);
+					
+				}else{
+					
+					response.sendRedirect("./LoginErServlet");
+				}
