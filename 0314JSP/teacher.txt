@@ -1,0 +1,24 @@
+ String a = "123";
+   pageContext.setAttribute("aa",a);
+   request.setAttribute("r",a);
+   session.setAttribute("s",a);
+   //request.getRequestDispatcher("MyJsp.jsp").forward(request,response);
+   application.setAttribute("a",a);
+
+
+
+<%=pageContext.getAttribute("aa") %><br>
+    <%=request.getAttribute("r") %><br>
+    <%=session.getAttribute("s") %><br>
+    <%=application.getAttribute("a") %>
+
+
+//for stringµÄÊ¹ÓÃ ´æ×Ö·û´®
+	//
+	//getattribute setattribute
+
+StringBuffer []s
+for(String s:ss){
+append(s)
+
+}
