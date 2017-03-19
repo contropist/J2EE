@@ -23,17 +23,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <form action="/servlet/HelloServlet" method="post">
+    <form action="./servlet/HelloServlet" method="post">
     	请输入a：<input type="text" name="va"/>
     	<select name="xuanze">
     		<option value="0">请选择</option>
 			<option value="+">+</option>
 			<option value="-">-</option>
 			<option value="*">*</option>
-			<option value="*">/</option>
+			<option value="/">/</option>
 		</select>
 		请输入b:<input type="text" name="vb">
-		<input type="submit" name="计算">
+		<input type="submit" name="jisuan">
     </form>
   </body>
 </html>

@@ -54,23 +54,24 @@ public class HelloServlet extends HttpServlet {
 			throws ServletException, IOException {
 		int a=Integer.parseInt(request.getParameter("va"));	
 		int b=Integer.parseInt(request.getParameter("vb"));	
+		//String sb=request.getParameter("vb");	
 		String fuhao=request.getParameter("xuanze");
-		int c;
-		if(fuhao=="+"){
-			c=a+b;
-		}else if(fuhao=="-"){
-			c=a-b;
-		}else if(fuhao=="*"){
-			c=a*b;
-		}else if(fuhao=="/"){
-		if(b==0){
-			System.out.println(" ‰»Î¥ÌŒÛ£°");
+		if("+".equals(fuhao)){
+			request.setAttribute("zhi",Integer.toString(a+b));
+		}
+		else if("-".equals(fuhao)){
+			request.setAttribute("zhi",Integer.toString(a-b));
+		}
+		else if("*".equals(fuhao)){
+			request.setAttribute("zhi",Integer.toString(a*b));
+		}
+		else if(("/".equals(fuhao)) && (b!=0)){
+			request.setAttribute("zhi",Integer.toString(a/b));
 		}else{
-			c=a/b;
+			request.setAttribute("zhi"," ‰»Î¥ÌŒÛ£°");
 		}
-		}
+		request.getRequestDispatcher("../b.jsp").forward(request,response); 
 	}
-	request.
 
 	/**
 	 * Initialization of the servlet. <br>
