@@ -1,0 +1,9 @@
+create table test.book(
+id int(4) primary key not null auto_increment,
+name varchar(50) not null,
+price float not null,
+author varchar(50),
+bookConcern varchar(50),
+count int(4) not null
+)
+LOAD DATA LOCAL INFILE "book.txt" INTO table book; 
