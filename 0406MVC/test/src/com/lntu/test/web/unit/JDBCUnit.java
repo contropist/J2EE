@@ -18,7 +18,7 @@ public class JDBCUnit {
 		Connection conn = null;
 		String url = "jdbc:sqlserver://localhost:1433;DatabaseName=master";
 		String user = "sa";
-		String password = "123qwe";
+		String password = "sa";
 
 		try {
 			conn = DriverManager.getConnection(url, user, password);
