@@ -1,0 +1,32 @@
+
+OGNL
+
+ActionContex----map
+
+map:1.根对象
+    2.request
+    3.session
+    4.application
+    
+
+
+#
+
+
+
+private String name ;
+
+get...
+set...
+
+root对象/根对象/值栈
+
+//防止多次提交数据库
+
+1.获取表单值
+2.根据用户名查询表
+  select * from users where username=?
+3.查询结果是一个集合，如果集合>0 Map request String a ="1"
+
+  页面跳转到注册页面
+4.如果集合<0，注册成功
